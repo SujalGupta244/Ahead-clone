@@ -8,7 +8,7 @@ const MiddleSec = () => {
             <div className=" flex flex-col items-center justify-center p-8 my-8">
                 <p className="mb-1 font-semibold">We take privacy seriously</p>
                 <h3 className="mb-3 font-bold text-2xl">Before you get Started</h3>
-                <h4 className="w-1/2 text-center mb-2 text-gray-700">"We won't share your answers wit anyone (and won't ever tell you which friends said what about you)"</h4>
+                <h4 className="w-1/2 text-center mb-2 text-gray-700">&ldquo;We won&quot;t share your answers wit anyone (and won&quot;t ever tell you which friends said what about you)&rdquo;</h4>
                 <p className="font-semibold mb-2">with love, <span className="font-light italic text-2xl">Sujal Gupta</span></p>
                 <button className="text-[0.8rem] p-2.5 mt-4 mb-2 bg-black rounded-3xl text-white">Start a test</button>
                 <p className="text-[0.6rem] text-gray-600 font-semibold">Take only 5 minutes</p>
