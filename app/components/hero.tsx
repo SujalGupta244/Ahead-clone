@@ -16,11 +16,11 @@ const Hero = () => {
   return (
     <div className='h-screen w-full mt-24 mb-28'>
         <Container className="h-4/5">
-            <div className='bg-purple-200 h-full rounded-[3rem] overflow-hidden flex '>
+            <div className='bg-[#EEEBFE] h-full rounded-[3rem] overflow-hidden flex '>
                 <div className="h-full flex flex-col items-start justify-center md:w-2/4 pl-12">
                     <h3 className='mb-4'>Ahead app</h3>
-                    <h1 className='text-6xl font-bold mb-5'>Master your life <br /> by mastering <br /> emotions</h1>
-                    <div className="flex gap-6 items-center">
+                    <h1 className='text-4xl md:text-6xl font-bold mb-5'>Master your life <br /> by mastering <br /> emotions</h1>
+                    <div className="flex flex-col md:flex-row gap-6 items-center">
                         <div className="app">
                             <div className="m-auto w-44 h-16 bg-black rounded-lg my-6 text-white text-2xl flex items-center justify-center"><Apple size={40}/>&nbsp;App Store</div>
                         </div>

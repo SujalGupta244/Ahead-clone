@@ -8,6 +8,7 @@ import Navbar from './components/navbar'
 import Levels from './components/levels'
 import Footer from './components/footer'
 import Carasoul from './components/ui/Carasoul'
+import MiddleSec from './components/middle-sec'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
     <Carasoul/>
     <Middle/>
     <Levels/>
+    <MiddleSec/>
     <Footer/>
     </>
   )
