@@ -7,15 +7,10 @@ import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline
 const LevelCard =(props : {level : {head: string,para: string}}) =>{
     const {level} = props
     return (
-    <VerticalTimelineElement contentStyle={{boxShadow: "none",color: '#000',padding: "0",width:'40rem'}} 
+    <VerticalTimelineElement contentStyle={{boxShadow: "none",color: '#000',padding: "0",width:'40rem',maxWidth:"80%"}} 
     contentArrowStyle={{width: '0px'}} 
     // date={level.date}
     iconStyle={{background: "#6544F3"}}
-    // icon={
-    //   <div className='flex items-center justify-center'>
-    //     {/* <img src={level.icon} alt={level.company_name} className="w-[60%] h-[60%] object-contain"/> */}
-    //   </div>
-    // }
     >
         <h3 className="vertical-timeline-element-titletext-[24px] font-bold">{level.head}</h3>
         <p className="text-secondary text-[16px] font-semibold">{level.para}</p>
