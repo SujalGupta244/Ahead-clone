@@ -21,17 +21,6 @@ const LevelCard =(props : {level : {head: string,para: string}}) =>{
         <p className="text-secondary text-[16px] font-semibold">{level.para}</p>
       
     </VerticalTimelineElement>
-    // <TimelineItem>
-    //     <TimelineSeparator>
-    //     <TimelineDot className='bg-[#6544F3]'/>
-    //     <TimelineConnector className='bg-[#6544F3]'/>
-    //     </TimelineSeparator>
-    //     <TimelineContent>
-    //         <h3>{level.head}</h3>
-    //         <p>{level.para}</p>
-    //     </TimelineContent>
-    // </TimelineItem>
-    
     )
 }
 
@@ -63,11 +52,7 @@ const Levels = () => {
             <h4>Wrong with self-improvement & how we're fixing it.</h4>
             <h1>Self-improvement. Ugh.</h1>
             <div className="level">
-            {/* <Timeline>
-                {levels.map((level,index) =>(
-                    <LevelCard key={index} level={level}/>
-                ))}        
-            </Timeline> */}
+           
             
             <VerticalTimeline layout="1-column-left" lineColor={'#6544F3'} >
                 {levels.map((level,index) =>(
