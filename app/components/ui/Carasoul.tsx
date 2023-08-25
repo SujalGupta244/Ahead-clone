@@ -14,7 +14,7 @@ interface SizeProps{
 
 
 
-export const Carasoul = () => {
+const Carasoul = () => {
 
     const size = useWindowSize();
   return (
@@ -68,6 +68,7 @@ export const Carasoul = () => {
   )
 }
 
+export default Carasoul
 
 
 function useWindowSize() {
