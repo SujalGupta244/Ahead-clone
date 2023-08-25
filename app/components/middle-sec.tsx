@@ -16,9 +16,9 @@ const MiddleSec = () => {
 
 
             <div className='h-screen bg-[#EDF8FE] rounded-[3rem] overflow-hidden md:flex gap-6 relative'>
-                <div className="md:h-full flex flex-col items-start justify-start md:w-2/3 md:pl-12 pt-20">
-                    <h1 className='text-5xl font-bold mb-5'>Work with us</h1>
-                    <div className=" overflow-auto shadow-xl md:block w-full md:w-4/5 mb-8 bg-white rounded-lg mt-8">
+                <div className="md:h-full flex flex-col text-center items-start justify-start md:w-2/3 md:pl-12 pt-20">
+                    <h1 className='text-5xl font-bold mb-5 px-4'>Work with us</h1>
+                    <div className=" overflow-auto md:overflow-visible shadow-xl md:block w-full md:w-4/5 mb-10 bg-white rounded-3xl mt-8">
                         <div className="p-8">
                             <div className="logo h-12 w-12 rounded-lg overflow-hidden bg-[#6544F3] mb-4">
                                 <div className="bg-[#EEEBFE] h-14 w-full rounded-full mt-2"></div>
@@ -32,7 +32,7 @@ const MiddleSec = () => {
                         </div>
                     </div>
                 </div>
-                <div className="hidden items-end p-12 pr-20 md:w-1/2">
+                <div className="hidden md:block items-end p-12 pr-20 md:w-1/2">
                     <h2 className="text-[#6544F3] text-6xl text-right font-semibold">ahead</h2>
                     <div className="h-full overflow-auto pb-4 no-scrollbar">
                         <div className="bg-white rounded-xl p-8 my-4">
