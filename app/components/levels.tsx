@@ -7,10 +7,10 @@ import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline
 const LevelCard =(props : {level : {head: string,para: string}}) =>{
     const {level} = props
     return (
-    <VerticalTimelineElement contentStyle={{background: "#6544f3", color: '#000',padding: "0"}} 
+    <VerticalTimelineElement contentStyle={{boxShadow: "none",color: '#000',padding: "0",width:'40rem'}} 
     contentArrowStyle={{width: '0px'}} 
     // date={level.date}
-    iconStyle={{background: "#6544F3", width: "1rem",height: "1rem",margin:"0"}}
+    iconStyle={{background: "#6544F3"}}
     // icon={
     //   <div className='flex items-center justify-center'>
     //     {/* <img src={level.icon} alt={level.company_name} className="w-[60%] h-[60%] object-contain"/> */}
@@ -27,38 +27,37 @@ const LevelCard =(props : {level : {head: string,para: string}}) =>{
 const Levels = () => {
     const levels =[
         {
-        head: "Lorem",
-        para: "Lorem slkf lkj lskdfjwlkj lkej w"
+        head: "Lorem ipsum dolor sit.",
+        para: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptate incidunt adipisci dicta facilis optio eveniet illum, quidem mollitia voluptas harum ab veniam voluptatum obcaecati, dolorum aspernatur voluptatibus natus eius?"
         },
         {
-        head: "Lorem",
-        para: "Lorem slkf lkj lskdfjwlkj lkej w"
+        head: "Lorem ipsum dolor sit.",
+        para: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptate incidunt adipisci dicta facilis optio eveniet illum, quidem mollitia voluptas harum ab veniam voluptatum obcaecati, dolorum aspernatur voluptatibus natus eius?"
         },
         {
-        head: "Lorem",
-        para: "Lorem slkf lkj lskdfjwlkj lkej w"
+        head: "Lorem ipsum dolor sit.",
+        para: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptate incidunt adipisci dicta facilis optio eveniet illum, quidem mollitia voluptas harum ab veniam voluptatum obcaecati, dolorum aspernatur voluptatibus natus eius?"
         },
         {
-        head: "Lorem",
-        para: "Lorem slkf lkj lskdfjwlkj lkej w"
+        head: "Lorem ipsum dolor sit.",
+        para: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptate incidunt adipisci dicta facilis optio eveniet illum, quidem mollitia voluptas harum ab veniam voluptatum obcaecati, dolorum aspernatur voluptatibus natus eius?"
         },
     ]
 
     
 
   return (
-    <div className='bg-black'>
-        <Container>
-            <h4>Wrong with self-improvement & how we're fixing it.</h4>
-            <h1>Self-improvement. Ugh.</h1>
-            <div className="level">
-           
+    <div className=''>
+        <Container className='m-auto'>
             
-            <VerticalTimeline layout="1-column-left" lineColor={'#6544F3'} >
-                {levels.map((level,index) =>(
-                <LevelCard key={index} level={level}/>
-                ))}
-            </VerticalTimeline>
+            <h4 className='text-base text-semibold'>Wrong with self-improvement & how we&apos;re fixing it.</h4>
+            <h1 className='text-4xl my-3 font-bold'>Self-improvement. Ugh.</h1>
+            <div className="level max-w-4xl m-auto flex flex-col items-center justify-center">
+                <VerticalTimeline layout="1-column-left" lineColor={'#6544F3'} >
+                    {levels.map((level,index) =>(
+                    <LevelCard key={index} level={level}/>
+                    ))}
+                </VerticalTimeline>
             </div>
         </Container>
     </div>

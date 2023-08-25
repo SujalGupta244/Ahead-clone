@@ -1,10 +1,13 @@
-"use client"
-import Image from 'next/image'
+// "use client"
+
+// import Image from 'next/image'
 import Hero from './components/hero'
-import Carasoul from './components/ui/Carasoul'
+
 import Middle from './components/middle'
-import Navbar from './components/Navbar'
+import Navbar from './components/navbar'
 import Levels from './components/levels'
+import Carasoul from './components/ui/carasoul'
+import Footer from './components/footer'
 
 export default function Home() {
   return (
@@ -14,6 +17,7 @@ export default function Home() {
     <Carasoul/>
     <Middle/>
     <Levels/>
+    <Footer/>
     </>
   )
 }

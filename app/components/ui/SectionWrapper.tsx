@@ -21,7 +21,7 @@ const SectionWrapper = (Component : JSX.Element) => function HOC(){
       {/* <span className="hash-span" id={idName}>
         &nbsp;
       </span> */}
-      <Component/>
+      {/* <Component/> */}
     </motion.section>
   )
 }

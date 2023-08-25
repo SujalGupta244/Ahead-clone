@@ -5,13 +5,18 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import { useEffect, useState } from 'react';
 
+interface SizeProps{
+    width: number | undefined,
+    height: number | undefined
+}
 
 
 
 const Carasoul = () => {
 
-
+    const size = useWindowSize();
   return (
     <div  className='mt-12'>
         <Container>
@@ -19,7 +24,7 @@ const Carasoul = () => {
         </Container>
 
         <Swiper
-            slidesPerView={window.innerWidth < 600 ? 1: 4}
+            slidesPerView={size.width && size.width < 600 ? 1: 4}
             // slidesPerView={'auto'}
             spaceBetween={30}
             pagination={{
@@ -64,3 +69,27 @@ const Carasoul = () => {
 }
 
 export default Carasoul
+
+
+function useWindowSize() {
+    const [windowSize, setWindowSize] = useState<SizeProps>({
+      width: undefined,
+      height: undefined,
+    });
+  
+    useEffect(() => {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+      
+      window.addEventListener("resize", handleResize);
+       
+      handleResize();
+      
+      return () => window.removeEventListener("resize", handleResize);
+    }, []); 
+    return windowSize;
+  }
