@@ -25,7 +25,6 @@ const Carasoul = () => {
 
         <Swiper
             slidesPerView={size.width && size.width < 600 ? 1: 4}
-            // slidesPerView={'auto'}
             spaceBetween={30}
             pagination={{
             clickable: true,
