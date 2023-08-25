@@ -6,7 +6,9 @@ const Footer = () => {
     <>
         <hr className="w-full p-2 my-10"/>
         <Container>
-            <div className="logo h-20 w-20 rounded-lg bg-[#6544F3] m-auto"></div>
+            <div className="logo h-20 w-20 rounded-lg bg-[#6544F3] m-auto overflow-hidden">
+              <div className="bg-[#EEEBFE] h-24 w-full rounded-full mt-5"></div>
+            </div>
             <h2 className="text-[#6544F3] text-xl font-bold text-center mt-4">Ahead</h2>
             <div className="flex items-center justify-center gap-20 my-8">
                 <h3 className="flex "><MapPin/>&nbsp;Address line</h3>

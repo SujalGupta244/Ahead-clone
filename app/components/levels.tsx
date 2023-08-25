@@ -37,6 +37,10 @@ const Levels = () => {
         head: "Lorem ipsum dolor sit.",
         para: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptate incidunt adipisci dicta facilis optio eveniet illum, quidem mollitia voluptas harum ab veniam voluptatum obcaecati, dolorum aspernatur voluptatibus natus eius?"
         },
+        {
+        head: "Lorem ipsum dolor sit.",
+        para: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptate incidunt adipisci dicta facilis optio eveniet illum, quidem mollitia voluptas harum ab veniam voluptatum obcaecati, dolorum aspernatur voluptatibus natus eius?"
+        },
     ]
 
     
@@ -47,8 +51,8 @@ const Levels = () => {
             
             <h4 className='text-base text-semibold'>Wrong with self-improvement & how we&apos;re fixing it.</h4>
             <h1 className='text-4xl my-3 font-bold'>Self-improvement. Ugh.</h1>
-            <div className="level max-w-4xl m-auto flex flex-col items-center justify-center">
-                <VerticalTimeline layout="1-column-left" lineColor={'#6544F3'} >
+            <div className="level max-w-4xl m-auto h-[50vh] overflow-auto no-scrollbar">
+                <VerticalTimeline layout="1-column-left" lineColor={'#6544F3'} className="">
                     {levels.map((level,index) =>(
                     <LevelCard key={index} level={level}/>
                     ))}
