@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import {textVariant} from '../../utils/motion'
 
 interface ContainerProps{
     children: React.ReactNode 
@@ -6,9 +8,14 @@ interface ContainerProps{
 
 const Container : React.FC<ContainerProps> = ({children, className}) => {
   return (
-    <div className={`mx-auto max-w-[80vw] ${className}`}>
+    <motion.div 
+    initial="hidden"
+    whileInView="show"
+    viewport={{once: true, amount: 0.25}} 
+    variants={textVariant(0.5)}
+    className={`mx-auto max-w-[80vw] ${className}`}>
         {children}
-    </div>
+    </motion.div>
   )
 }
 

@@ -23,8 +23,8 @@ const Hero = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{once: true, amount: 0.25}} 
-                variants={fadeIn('right','spring', 0.1, 1)}  className="h-full flex flex-col items-start justify-center md:w-2/4 pl-12">
-                    <h3 className='mb-4 text-2xl'>Ahead app</h3>
+                variants={fadeIn('right','spring', 1.5, 1)}  className="h-full flex flex-col items-start justify-center md:w-2/4 pl-12">
+                    <h3 className='mb-4 text-2xl font-semibold'>Ahead app</h3>
                     <h1 className='text-4xl md:text-6xl font-bold mb-5'>Master your life <br /> by mastering <br /> emotions</h1>
                     <div className="flex flex-col md:flex-row gap-6 items-center">
                         <div className="app">
@@ -45,7 +45,7 @@ const Hero = () => {
                 <motion.div initial="hidden"
                 whileInView="show"
                 viewport={{once: true, amount: 0.25}} 
-                variants={fadeIn('left','spring', 0.1, 1)} className="h-full hidden md:flex flex-col items-start justify-center w-2/4 pr-10 relative">
+                variants={fadeIn('left','spring', 1, 1)} className="h-full hidden md:flex flex-col items-start justify-center w-2/4 pr-10 relative">
                     <Image src={"undraw_home_screen_re_640d.svg"} alt="Hero Image" fill/>
                 </motion.div>
             </div>
@@ -55,7 +55,7 @@ const Hero = () => {
             initial="hidden"
             whileInView="show"
             viewport={{once: true, amount: 0.25}} 
-            variants={textVariant(0.1)}
+            variants={textVariant(0.6)}
             className="mt-20 flex gap-32 p-6">
                 <h2 className='font-bold w-1/3 text-2xl'>EQ beats IQ</h2>
                 <p>People with high emotions intelligence (EQ) live more fulfilled life. They tend to be happier and have healthier relationship.</p>

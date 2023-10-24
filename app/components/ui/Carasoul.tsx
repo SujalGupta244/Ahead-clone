@@ -6,6 +6,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { useEffect, useState } from 'react';
+import { motion } from "framer-motion";
+import {fadeIn, textVariant} from '../../utils/motion'
 
 interface SizeProps{
     width: number | undefined,
@@ -18,7 +20,12 @@ const Carasoul = () => {
 
     const size = useWindowSize();
   return (
-    <div  className='mt-12'>
+    <motion.div 
+    initial="hidden"
+    whileInView="show"
+    viewport={{once: true, amount: 0.25}} 
+    variants={fadeIn('left','spring', 0.1, 1)}
+    className='mt-12'>
         <Container>
             <h1 className='font-bold text-4xl mb-8'>Does this sound familiar...</h1>
         </Container>
@@ -63,7 +70,7 @@ const Carasoul = () => {
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis at officiis qui debitis itaque delectus reiciendis, ducimus laudantium quam asperiores!</p>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </motion.div>
   )
 }
 
