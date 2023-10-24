@@ -14,7 +14,7 @@ const Footer = () => {
                 <h3 className="flex "><MapPin/>&nbsp;Address line</h3>
                 <h3 className="flex "><Mail/>&nbsp;Email123@gmail.com</h3>
             </div>
-            <div className="m-auto w-44 h-16 bg-black rounded-lg my-6 text-white text-2xl flex items-center justify-center"><Apple size={40}/>&nbsp;App Store</div>
+            <div className="m-auto w-44 h-16 bg-black rounded-lg my-6 text-white text-2xl flex items-center justify-center"><Apple size={40} fill="white"/>&nbsp;App Store</div>
             <p className="text-center my-8">&copy; 2023 Ahead app. All rights reserved.</p>
         </Container>   
     </>

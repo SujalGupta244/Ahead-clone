@@ -22,15 +22,15 @@ const Hero = () => {
                     <h1 className='text-4xl md:text-6xl font-bold mb-5'>Master your life <br /> by mastering <br /> emotions</h1>
                     <div className="flex flex-col md:flex-row gap-6 items-center">
                         <div className="app">
-                            <div className="m-auto w-44 h-16 bg-black rounded-lg my-6 text-white text-2xl flex items-center justify-center"><Apple size={40}/>&nbsp;App Store</div>
+                            <div className="m-auto w-44 h-16 bg-black rounded-lg my-6 text-white text-2xl flex items-center justify-center"><Apple size={40} fill="white"/>&nbsp;App Store</div>
                         </div>
                         <div className="stars">
                             <div className="flex gap-2">
-                                <Star/>
-                                <Star/>
-                                <Star/>
-                                <Star/>
-                                <Star/>
+                                <Star fill='gold' strokeWidth='0' size={40}/>
+                                <Star fill='gold' strokeWidth='0' size={40}/>
+                                <Star fill='gold' strokeWidth='0' size={40}/>
+                                <Star fill='gold' strokeWidth='0' size={40}/>
+                                <Star fill='gold' strokeWidth='0' size={40}/>
                             </div>
                             <p>100+ Appstore reviews</p>
                         </div>

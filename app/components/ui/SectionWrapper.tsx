@@ -4,9 +4,9 @@ import {motion} from 'framer-motion'
 import {staggerContainer} from '../../utils/motion'
 
 
-interface SectionWrapperProps{
-  Component: React.ReactNode
-}
+// interface SectionWrapperProps{
+//   Component: React.ReactNode
+// }
 
 
 const SectionWrapper = (Component : JSX.Element) => function HOC(){
@@ -22,6 +22,7 @@ const SectionWrapper = (Component : JSX.Element) => function HOC(){
         &nbsp;
       </span> */}
       {/* <Component/> */}
+      {Component}
     </motion.section>
   )
 }
