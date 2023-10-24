@@ -55,7 +55,7 @@ const Hero = () => {
             initial="hidden"
             whileInView="show"
             viewport={{once: true, amount: 0.25}} 
-            variants={textVariant(0.6)}
+            variants={textVariant(2.5)}
             className="mt-20 flex gap-32 p-6">
                 <h2 className='font-bold w-1/3 text-2xl'>EQ beats IQ</h2>
                 <p>People with high emotions intelligence (EQ) live more fulfilled life. They tend to be happier and have healthier relationship.</p>

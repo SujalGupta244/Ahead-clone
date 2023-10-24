@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Container from "./ui/container"
 import { motion } from "framer-motion";
-import {fadeIn, textVariant} from '../utils/motion'
+import {slideIn, fadeIn} from '../utils/motion'
 
 const MiddleSec = () => {
   return (
@@ -30,7 +30,12 @@ const MiddleSec = () => {
 
 
             <div className='h-screen bg-[#EDF8FE] rounded-[3rem] overflow-hidden md:flex gap-6 relative'>
-                <div className="md:h-full flex flex-col text-center items-start justify-start md:w-2/3 md:pl-12 pt-20">
+                <motion.div 
+                initial="hidden"
+                whileInView="show"
+                viewport={{once: true, amount: 0.25}} 
+                variants={fadeIn('up','spring', 1.5, 1)}
+                className="md:h-full flex flex-col text-center items-start justify-start md:w-2/3 md:pl-12 pt-20">
                     <h1 className='text-5xl font-bold mb-5 px-4'>Work with us</h1>
                     <div className=" overflow-auto md:overflow-visible shadow-xl md:block w-full md:w-4/5 mb-10 bg-white rounded-3xl mt-8">
                         <div className="p-8">
@@ -45,8 +50,13 @@ const MiddleSec = () => {
                             <p className="leading-7 w-[90%]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nisi ex asperiores enim ab laborum quo, et voluptate atque, amet culpa, voluptatibus eos modi perferendis repudiandae distinctio non itaque excepturi.</p>
                         </div>
                     </div>
-                </div>
-                <div className="hidden md:block items-end p-12 pr-20 md:w-1/2">
+                </motion.div>
+                <motion.div
+                initial="hidden"
+                whileInView="show"
+                viewport={{once: true, amount: 0.25}} 
+                variants={fadeIn('left','spring', 1.5, 1)}
+                className="hidden md:block items-end p-12 pr-20 md:w-1/2">
                     <h2 className="text-[#6544F3] text-6xl text-right font-semibold">ahead</h2>
                     <div className="h-full overflow-auto pb-4 no-scrollbar">
                         <div className="bg-white rounded-xl p-8 my-4">
@@ -66,7 +76,7 @@ const MiddleSec = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur impedit repellendus reprehenderit eius ipsa accusantium earum.</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </Container>
     </div>
