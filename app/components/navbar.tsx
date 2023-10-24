@@ -1,11 +1,17 @@
 // "use client"
 
 import Container from "./ui/container"
+import { motion } from "framer-motion";
+import {textVariant, zoomIn} from '../utils/motion'
 
 
 const Navbar = () => {
   return (
-    <div className="w-full fixed z-10 bg-white mb-8 top-0 left-0">
+    <motion.div
+    initial="hidden"
+    whileInView="show"
+    variants={zoomIn(0.01, 1)} 
+    className="w-full fixed z-10 bg-white mb-8 top-0 left-0">
         <Container>
           <nav className="flex items-center justify-between flex-wrap md:py-4 p-4">
             <div className="icon">
@@ -24,7 +30,7 @@ const Navbar = () => {
             </div>
           </nav>
         </Container>
-    </div>
+    </motion.div>
   )
 }
 
